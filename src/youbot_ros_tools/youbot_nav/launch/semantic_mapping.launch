@@ -1,0 +1,31 @@
+<launch>
+
+  <param name="/use_sim_time" value="true" />
+  <include file="$(find youbot_gazebo)/launch/youbot.launch" />
+
+  <arg name="ns" default="youbot" />
+  <group ns="$(arg ns)">
+
+    <!-- Run the map server -->
+    <node name="map_server" pkg="map_server" type="map_server" args="$(find semantic_mapping)/maps/workspace.yaml"/>
+
+    <!--- Run AMCL -->
+    <include file="$(find youbot_2dnav)/amcl_config/youbot_amcl.launch">
+      <arg name="ns" value="$(arg ns)" />
+    </include>
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" args="cmd_vel:=/youbot/cmd_vel">
+      <rosparam file="$(find youbot_2dnav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+      <rosparam file="$(find youbot_2dnav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+      <rosparam file="$(find youbot_2dnav)/config/local_costmap_params.yaml" command="load" />
+      <rosparam file="$(find youbot_2dnav)/config/global_costmap_params.yaml" command="load" />
+      <rosparam file="$(find youbot_2dnav)/config/base_local_planner_params.yaml" command="load" />
+    </node>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find semantic_mapping)/launch/semantic_mapping.rviz" />
+
+  </group>
+
+  <include file="$(find semantic_mapping)/launch/semantic_mapping_full.launch" />
+
+</launch>

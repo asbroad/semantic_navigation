@@ -1,0 +1,20 @@
+collection_area: {pos_x: 0.9, pos_y: 0.4, pos_z: 0.0, orient_w: 0.691,orient_x: 0.0,orient_y: 0.0,orient_z: -0.723}
+build_area: {pos_x: 0.89, pos_y: -0.556, pos_z: 0.0, orient_w: 0.690,orient_x: 0.0,orient_y: 0.0,orient_z: -0.724}
+
+left_wall: {pos_x: 3.46716825489, pos_y: -0.520610617137, pos_z: 0.0, orient_x:0.0, orient_y: 0.0, orient_z: -0.992755368572, orient_w: 0.120153144657}
+right_wall: {pos_x: -2.65687066442, pos_y: -0.531299194075, pos_z: 0.0, orient_x:0.0, orient_y: 0.0, orient_z: -0.200382936678, orient_w: 0.979717652535}
+
+Right Wall
+
+pose: 
+  pose: 
+    position: 
+      x: -2.65687066442
+      y: -0.531299194075
+      z: 0.0
+    orientation: 
+      x: 0.0
+      y: 0.0
+      z: -0.200382936678
+      w: 0.979717652535
+
