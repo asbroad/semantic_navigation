@@ -1,0 +1,82 @@
+Language model created by QuickLM on Thu Dec 18 17:40:41 EST 2014
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 7 sentences and 16 words
+
+\data\
+ngram 1=16
+ngram 2=22
+ngram 3=21
+
+\1-grams:
+-1.0580 </s> -0.3010
+-1.0580 <s> -0.2613
+-1.6021 AS -0.2788
+-1.6021 GO -0.2788
+-1.6021 HOME -0.2613
+-1.6021 KITCHEN -0.2613
+-1.9031 LEFT -0.2900
+-1.9031 MAP -0.2613
+-1.6021 MOVE -0.2788
+-1.6021 POSITION -0.2900
+-1.9031 RIGHT -0.2900
+-1.6021 SET -0.2900
+-1.6021 THE -0.2900
+-1.3010 TO -0.2672
+-1.9031 UPDATE -0.2956
+-1.6021 WALL -0.2613
+
+\2-grams:
+-0.8451 <s> GO 0.0000
+-0.8451 <s> MOVE 0.0000
+-0.8451 <s> SET 0.0000
+-1.1461 <s> UPDATE 0.0000
+-0.6021 AS HOME 0.0000
+-0.6021 AS KITCHEN 0.0000
+-0.3010 GO TO -0.1761
+-0.3010 HOME </s> -0.3010
+-0.3010 KITCHEN </s> -0.3010
+-0.3010 LEFT WALL 0.0000
+-0.3010 MAP </s> -0.3010
+-0.3010 MOVE TO -0.1761
+-0.3010 POSITION AS 0.0000
+-0.3010 RIGHT WALL 0.0000
+-0.3010 SET POSITION 0.0000
+-0.6021 THE LEFT 0.0000
+-0.6021 THE RIGHT 0.0000
+-0.9031 TO HOME 0.0000
+-0.9031 TO KITCHEN 0.0000
+-0.6021 TO THE 0.0000
+-0.3010 UPDATE MAP 0.0000
+-0.3010 WALL </s> -0.3010
+
+\3-grams:
+-0.3010 <s> GO TO
+-0.3010 <s> MOVE TO
+-0.3010 <s> SET POSITION
+-0.3010 <s> UPDATE MAP
+-0.3010 AS HOME </s>
+-0.3010 AS KITCHEN </s>
+-0.3010 GO TO THE
+-0.3010 LEFT WALL </s>
+-0.6021 MOVE TO HOME
+-0.6021 MOVE TO KITCHEN
+-0.6021 POSITION AS HOME
+-0.6021 POSITION AS KITCHEN
+-0.3010 RIGHT WALL </s>
+-0.3010 SET POSITION AS
+-0.3010 THE LEFT WALL
+-0.3010 THE RIGHT WALL
+-0.3010 TO HOME </s>
+-0.3010 TO KITCHEN </s>
+-0.6021 TO THE LEFT
+-0.6021 TO THE RIGHT
+-0.3010 UPDATE MAP </s>
+
+\end\

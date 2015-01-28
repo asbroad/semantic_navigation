@@ -1,0 +1,4 @@
+left_wall: {pos_x: 3.46716825489, pos_y: -0.520610617137, pos_z: 0.0, orient_x: 0.0, orient_y: 0.0, orient_z: -0.992755368572, orient_w: 0.120153144657}
+right_wall: {pos_x: -2.65687066442, pos_y: -0.531299194075, pos_z: 0.0, orient_x: 0.0, orient_y: 0.0, orient_z: -0.200382936678, orient_w: 0.979717652535}
+home: {pos_x: 0.224410715226,pos_y: 1.88879718373,pos_z: 0.0,orient_x: 0.0,orient_y: 0.0,orient_z: -0.711021595024,orient_w: 0.70317017244}
+kitchen: {pos_x: -4.32275570952,pos_y: 1.37000551905,pos_z: 0.0,orient_x: 0.0,orient_y: 0.0,orient_z: -0.276764774632,orient_w: 0.960937698044}

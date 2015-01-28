@@ -1,0 +1,15 @@
+<launch>
+
+  <node name="recognizer" pkg="pocketsphinx" type="recognizer.py" output="screen">
+      <param name="lm" value="$(find voice_command)/config/voice_commands.lm"/>
+      <param name="dict" value="$(find voice_command)/config/voice_commands.dic"/>
+  </node>
+
+  <rosparam command="load" file="$(find voice_command)/config/location_dictionary.yaml"/>
+
+  <node name="command_comprehension" pkg="voice_command" type="command_comprehension.py" output="screen"/>
+  <node name="update_location_dictionary" pkg="voice_command" type="update_location_dictionary.py" output="screen"/>
+  <node name="recieve_named_goal" pkg="voice_command" type="recieve_named_goal.py" output="screen"/>
+  <node name="initialize_map" pkg="voice_command" type="initialize_map.py" output="screen"/>
+
+</launch>

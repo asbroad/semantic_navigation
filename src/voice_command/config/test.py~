@@ -1,0 +1,26 @@
+#! /usr/bin/env python
+
+
+def main():
+    locations = []
+    with open('location_dictionary.yaml','r') as myfile:
+	locations = myfile.readlines()
+
+    for location in locations:
+	name_and_loc = location.split('{')
+	# handle name
+	name_orig = name_and_loc[0]
+	name = name_orig.strip().replace(':','').replace('_',' ')
+	# handle location
+	full_loc_orig = name_and_loc[1].replace('}','')
+	all_loc_parts = full_loc_orig.split(',')
+	pos_x = float(all_loc_parts[0].split(':')[1].strip())
+	pos_y = float(all_loc_parts[1].split(':')[1].strip())
+	pos_z = float(all_loc_parts[2].split(':')[1].strip())
+
+	
+
+
+
+if __name__=='__main__':
+    main()
