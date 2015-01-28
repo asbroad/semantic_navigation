@@ -1,0 +1,10 @@
+<launch>
+
+  <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+    <param name="base_frame" value="base_link"/>
+    <param name="map_frame" value="map"/>
+    <param name="odom_frame" value="odom"/>
+    <param name="scan" value="youbot/scan_front" />
+  </node>
+
+</launch>

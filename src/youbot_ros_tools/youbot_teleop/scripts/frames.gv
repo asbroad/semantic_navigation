@@ -1,0 +1,5 @@
+digraph G {
+"map" -> "odom"[label="Broadcaster: /slam_gmapping\nAverage rate: 21.000 Hz\nMost recent transform: 797.772 \nBuffer length: 1.000 sec\n"];
+"youbot/odom" -> "youbot/base_link"[label="Broadcaster: /gazebo\nAverage rate: 20.640 Hz\nMost recent transform: 797.706 \nBuffer length: 0.969 sec\n"];
+"youbot/base_link" -> "youbot/base_laser_front_link"[label="Broadcaster: /tf_scanner\nAverage rate: 26.042 Hz\nMost recent transform: 797.760 \nBuffer length: 0.960 sec\n"];
+}
